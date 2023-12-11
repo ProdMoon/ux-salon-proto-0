@@ -29,7 +29,7 @@ const handleMouseDownOnModal = () => {
     @mousedown.self="handleMouseDownOnBackground"
     @mouseup.self="handleMouseUpOnBackground"
   >
-    <div class="min-w-[400px] min-h-[300px] bg-white rounded-lg" @mousedown.stop="handleMouseDownOnModal">
+    <div class="w-full min-h-[360px] bg-white rounded-lg" @mousedown.stop="handleMouseDownOnModal">
       <slot></slot>
     </div>
   </div>
