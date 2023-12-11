@@ -23,6 +23,6 @@ onMounted(() => {
 const currentLatLng = ref('');
 </script>
 <template>
-  <div id="map" class="w-[400px] h-[600px]"></div>
+  <div id="map" class="w-full h-[600px]"></div>
   <div>{{ currentLatLng }}</div>
 </template>
