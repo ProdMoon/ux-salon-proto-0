@@ -9,8 +9,8 @@ inject();
 
 <template>
   <div class="sm:h-screen flex items-center justify-center bg-gray-700">
-    <div class="w-full h-screen bg-white sm:w-[430px] sm:h-[932px]">
-      <div class="h-[calc(100%-3rem)] overflow-auto">
+    <div class="w-full bg-white sm:w-[430px] sm:h-[932px]">
+      <div class="h-[calc(100%-3rem)] pb-12 overflow-auto sm:pb-0">
         <RouterView />
       </div>
       <FooterComponent />

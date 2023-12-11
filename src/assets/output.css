@@ -540,8 +540,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .left-0 {
@@ -734,6 +742,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -798,6 +810,14 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:static {
+    position: static;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:h-\[932px\] {
     height: 932px;
   }
@@ -808,5 +828,9 @@ video {
 
   .sm\:w-\[430px\] {
     width: 430px;
+  }
+
+  .sm\:pb-0 {
+    padding-bottom: 0px;
   }
 }
