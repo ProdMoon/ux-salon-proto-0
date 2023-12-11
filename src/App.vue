@@ -1,5 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
+import { notice } from '@/util/notice.js';
+notice();
 </script>
 
 <template>
