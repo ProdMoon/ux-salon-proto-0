@@ -28,13 +28,31 @@ function removeTodo(index) {
 }
 
 function initTodos() {
-  const todosFromLocalStorage = localStorage.getItem('todos');
-  if (todosFromLocalStorage) {
-    const parsedTodos = JSON.parse(todosFromLocalStorage);
-    todos.value = parsedTodos.map((todo) => {
-      return makeTodoObject(todo.content);
-    });
-  }
+  // const todosFromLocalStorage = localStorage.getItem('todos');
+  // if (todosFromLocalStorage) {
+  //   const parsedTodos = JSON.parse(todosFromLocalStorage);
+  //   todos.value = parsedTodos.map((todo) => {
+  //     return makeTodoObject(todo.content);
+  //   });
+  // }
+  const initialTodos = [
+    {
+      content: '할 일 1',
+      editFunction: editTodo,
+      removeFunction: removeTodo
+    },
+    {
+      content: '할 일 2',
+      editFunction: editTodo,
+      removeFunction: removeTodo
+    },
+    {
+      content: '할 일 3',
+      editFunction: editTodo,
+      removeFunction: removeTodo
+    }
+  ];
+  todos.value = initialTodos;
 }
 
 watch(
