@@ -1,9 +1,9 @@
 <script setup>
 import { RouterView } from 'vue-router';
 import FooterComponent from '@/components/FooterComponent.vue';
-import { notice } from '@/util/notice.js';
+// import { notice } from '@/util/notice.js';
 import { inject } from '@vercel/analytics';
-notice();
+// notice();
 inject();
 </script>
 
